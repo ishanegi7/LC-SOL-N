@@ -1,28 +1,90 @@
-Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+# Find First and Last Position of Element in Sorted Array
 
-If target is not found in the array, return [-1, -1].
+## Problem Statement
 
-You must write an algorithm with O(log n) runtime complexity.
+Given an integer array `nums` sorted in **non-decreasing order**, find the **starting** and **ending** positions of a given `target` value.
 
- 
+If the target is not present in the array, return `[-1, -1]`.
 
-Example 1:
+Your algorithm must have a runtime complexity of **O(log n)**.
 
-Input: nums = [5,7,7,8,8,10], target = 8
-Output: [3,4]
-Example 2:
+---
 
-Input: nums = [5,7,7,8,8,10], target = 6
-Output: [-1,-1]
-Example 3:
+## Examples
 
-Input: nums = [], target = 0
-Output: [-1,-1]
- 
+### Example 1
 
-Constraints:
+**Input**
+```text
+nums = [5,7,7,8,8,10]
+target = 8
+```
 
-0 <= nums.length <= 105
--109 <= nums[i] <= 109
-nums is a non-decreasing array.
--109 <= target <= 109
+**Output**
+```text
+[3,4]
+```
+
+### Example 2
+
+**Input**
+```text
+nums = [5,7,7,8,8,10]
+target = 6
+```
+
+**Output**
+```text
+[-1,-1]
+```
+
+### Example 3
+
+**Input**
+```text
+nums = []
+target = 0
+```
+
+**Output**
+```text
+[-1,-1]
+```
+
+---
+
+## Constraints
+
+- `0 <= nums.length <= 10^5`
+- `-10^9 <= nums[i] <= 10^9`
+- `nums` is sorted in **non-decreasing** order.
+- `-10^9 <= target <= 10^9`
+
+---
+
+## Function Signature
+
+### C++
+
+```cpp
+vector<int> searchRange(vector<int>& nums, int target);
+```
+
+---
+
+## Notes
+
+- The returned array should contain:
+  - The index of the **first occurrence** of `target`.
+  - The index of the **last occurrence** of `target`.
+- If the target does not exist, return `[-1, -1]`.
+- Aim for an **O(log n)** solution.
+
+---
+
+## Tags
+
+- Binary Search
+- Arrays
+- Searching
+```
