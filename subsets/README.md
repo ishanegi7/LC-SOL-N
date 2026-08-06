@@ -1,0 +1,104 @@
+# 78. Subsets
+
+## Problem Statement
+Given an integer array `nums` containing **unique** elements, return **all possible subsets** (the power set).
+
+The solution set **must not contain duplicate subsets**. The subsets can be returned in **any order**.
+
+---
+
+## Examples
+
+### Example 1
+**Input:**
+```text
+nums = [1,2,3]
+```
+
+**Output:**
+```text
+[[], [1], [2], [1,2], [3], [1,3], [2,3], [1,2,3]]
+```
+
+---
+
+### Example 2
+**Input:**
+```text
+nums = [0]
+```
+
+**Output:**
+```text
+[[], [0]]
+```
+
+---
+
+## Constraints
+
+- `1 <= nums.length <= 10`
+- `-10 <= nums[i] <= 10`
+- All elements in `nums` are **unique**.
+
+---
+
+# Intuition
+
+A subset is any combination of elements selected from the array while preserving uniqueness.
+
+For every element, there are two possible choices:
+- Include it in the current subset.
+- Exclude it from the current subset.
+
+By considering every possible choice for every element, we can generate the complete power set.
+
+---
+
+# Approach
+
+A valid solution should:
+
+1. Start with an empty subset.
+2. Explore every element one by one.
+3. Decide whether to include or exclude each element.
+4. Store every valid subset.
+5. Return the collection of all generated subsets.
+
+---
+
+# Complexity
+
+- **Time Complexity:** `O(2ⁿ × n)`
+- **Space Complexity:** `O(2ⁿ × n)`
+
+> There are `2ⁿ` possible subsets, and storing each subset may require up to `n` elements.
+
+---
+
+# Edge Cases
+
+- Array contains only one element.
+- Array contains negative numbers.
+- Empty subset should always be included.
+- Entire array itself is also a valid subset.
+- Since all elements are unique, duplicate subsets are never produced.
+
+---
+
+# Tags
+
+- Backtracking
+- Recursion
+- Bit Manipulation
+- Array
+- Depth-First Search (DFS)
+- Power Set
+
+---
+
+# Follow-up
+
+- Can you generate subsets without using recursion?
+- Can the solution be implemented using bit manipulation?
+- How would the solution change if duplicate elements were allowed?
