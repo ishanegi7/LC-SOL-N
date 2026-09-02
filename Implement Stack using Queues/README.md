@@ -1,92 +1,150 @@
-225. Implement Stack using Queues
+# 225. Implement Stack using Queues
 
 Difficulty: Easy
-Topics: Queue, Stack, Design
 
-Problem
+Topics:
+- Queue
+- Stack
+- Design
 
-Implement a Last-In-First-Out (LIFO) Stack using only two Queues.
+---
 
-Your stack should support all standard stack operations:
+## Problem
 
-push(int x) — Adds element x to the top of the stack.
-pop() — Removes and returns the element at the top.
-top() — Returns the element at the top without removing it.
-empty() — Returns true if the stack is empty, otherwise false.
-Queue Operations Allowed
+Implement a Last-In-First-Out (LIFO) stack using only two queues.
 
-You may use only standard queue operations:
+The implemented stack should support all the functions of a normal stack:
 
-Push/add an element to the back
-Peek/remove an element from the front
-Get the size
-Check whether the queue is empty
+- push
+- top
+- pop
+- empty
 
-You must not use stack-specific operations on the queue.
+---
 
-Depending on the programming language, you may simulate a queue using a list or deque, but you must follow normal queue behavior.
+## Implement the MyStack Class
 
-Example
-Input
+### push(int x)
+
+Pushes element `x` to the top of the stack.
+
+### pop()
+
+Removes the element on the top of the stack and returns it.
+
+### top()
+
+Returns the element on the top of the stack.
+
+### empty()
+
+Returns true if the stack is empty, otherwise returns false.
+
+---
+
+## Queue Operations Allowed
+
+You must use only standard operations of a queue.
+
+The following operations are allowed:
+
+- Push to back
+- Peek from front
+- Pop from front
+- Size
+- Is empty
+
+You cannot directly use stack operations on the queue.
+
+Depending on your language, the queue may not be supported natively.
+
+You may simulate a queue using a list or deque as long as you use only standard queue operations.
+
+---
+
+## Stack vs Queue
+
+A Stack follows:
+
+LIFO = Last In, First Out
+
+A Queue follows:
+
+FIFO = First In, First Out
+
+The main challenge is to implement Stack behavior using Queue behavior.
+
+---
+
+## Example 1
+
+### Input
+
 ["MyStack", "push", "push", "top", "pop", "empty"]
 [[], [1], [2], [], [], []]
 
-Output
+### Output
+
 [null, null, null, 2, 2, false]
 
-Explanation
+### Explanation
+
 MyStack myStack = new MyStack();
 
 myStack.push(1);
 myStack.push(2);
 
-myStack.top();    // returns 2
-myStack.pop();    // returns 2
-myStack.empty();  // returns false
+myStack.top();    // return 2
+myStack.pop();    // return 2
+myStack.empty();  // return false
 
-Constraints
-1 <= x <= 9
-At most 100 calls will be made to push, pop, top, and empty.
-All calls to pop and top are valid.
-Important Observation
+---
 
-A Stack follows:
+## Constraints
 
-LIFO → Last In, First Out
+- 1 <= x <= 9
+- At most 100 calls will be made to push, pop, top, and empty.
+- All the calls to pop and top are valid.
 
+---
 
-A Queue follows:
-
-FIFO → First In, First Out
-
-
-The main challenge is to make queue-based operations behave like a stack.
-
-Think about:
-
-After calling push(1) and then push(2), how can the queue structure be arranged so that 2 becomes the next element available for pop()?
-
-Follow-up
+## Follow-up
 
 Can you implement the stack using only one queue?
 
-What to Figure Out
+---
 
-Before coding, determine:
+## Things to Think About
 
-What should happen internally during push()?
-Which operation should be O(1) and which can be more expensive?
-How can two queues help you reverse the effective order?
-Can the same idea be optimized to use only one queue?
-Goal
+Before implementing the solution, think about:
 
-Implement the following class:
+1. What happens when a new element is pushed?
+2. How can two queues help maintain Stack order?
+3. Which element should be available first when pop() is called?
+4. How can top() find the most recently pushed element?
+5. What should empty() check?
+6. Which operation can be made O(1)?
+7. Which operation may require moving elements between queues?
+8. Can the same idea be implemented using only one queue?
+
+---
+
+## Class Structure
 
 MyStack
-├── push(x)
-├── pop()
-├── top()
-└── empty()
 
+- push(int x)
+- int pop()
+- int top()
+- boolean empty()
 
-Try to derive the implementation yourself before looking at any solution.
+---
+
+## Goal
+
+Implement a Stack using only Queue operations.
+
+Do not use any built-in Stack implementation.
+
+Try to derive the approach yourself before looking at a solution.
+
