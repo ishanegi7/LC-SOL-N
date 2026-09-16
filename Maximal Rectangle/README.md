@@ -12,7 +12,7 @@ Examples
 Example 1
 
 Input:
-
+```
 matrix = [
   ["1","0","1","0","0"],
   ["1","0","1","1","1"],
@@ -20,11 +20,11 @@ matrix = [
   ["1","0","0","1","0"]
 ]
 
-
+```
 Output:
-
+```
 6
-
+```
 
 Explanation:
 
@@ -33,31 +33,31 @@ The maximal rectangle containing only 1's has an area of 6.
 Example 2
 
 Input:
-
+```
 matrix = [["0"]]
 
-
+```
 Output:
-
+```
 0
-
+```
 Example 3
 
 Input:
-
+```
 matrix = [["1"]]
-
+```
 
 Output:
-
+```
 1
-
+```
 Constraints
-
+```
 1 <= rows, cols <= 200
 
 matrix[i][j] is either '0' or '1'
-
+```
 Approach
 
 The problem can be viewed as finding the largest rectangle of 1's in a binary matrix.
@@ -80,19 +80,7 @@ Key Insight
 
 For every cell containing 1, its height represents the number of consecutive 1's above it, including the current cell.
 
-For example:
 
-1 0 1 1
-1 1 1 1
-1 1 1 1
-
-
-The histogram heights for the last row become:
-
-3 2 3 3
-
-
-The largest rectangle in this histogram corresponds to a rectangle of 1's in the original matrix.
 
 Data Structure
 
@@ -114,37 +102,3 @@ O(R × C)
 Space Complexity
 O(C)
 
-Important Edge Cases
-
-Matrix containing only 0's
-
-Matrix containing only 1's
-
-Single-cell matrix
-
-Single-row matrix
-
-Single-column matrix
-
-Rectangle spanning multiple rows
-
-Rectangle spanning multiple columns
-
-Multiple rectangles having the same maximum area
-
-Pattern
-Binary Matrix
-      ↓
-Consecutive Heights
-      ↓
-Histogram
-      ↓
-Largest Rectangle
-      ↓
-Maximum Area
-
-Related Problems
-
-84. Largest Rectangle in Histogram
-
-221. Maximal Square
