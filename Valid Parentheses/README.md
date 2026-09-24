@@ -21,8 +21,9 @@ A string is considered **valid** if:
 s = "()"
 
 Output:
-
+```
 true
+```
 
 Example 2
 Input:
@@ -30,36 +31,37 @@ Input:
 s = "()[]{}"
 
 Output:
-
+```
 true
-
+```
 Example 3
 Input:
 
 s = "(]"
 
 Output:
-
+```
 false
-
+```
 Example 4
+
 Input:
 
 s = "([])"
-
+```
 Output:
-
+```
 true
-
+```
 Example 5
 Input:
 
 s = "([)]"
 
 Output:
-
+```
 false
-
+```
 Constraints
 
 1 <= s.length <= 10^4
