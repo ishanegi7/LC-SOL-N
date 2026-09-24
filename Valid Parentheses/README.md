@@ -17,7 +17,7 @@ A string is considered **valid** if:
 ### Example 1
 
 **Input:**
-```text
+
 s = "()"
 
 Output:
@@ -26,6 +26,7 @@ true
 ```
 
 Example 2
+
 Input:
 
 s = "()[]{}"
@@ -48,7 +49,7 @@ Example 4
 Input:
 
 s = "([])"
-```
+
 Output:
 ```
 true
