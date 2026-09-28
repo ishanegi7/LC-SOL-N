@@ -34,11 +34,12 @@ Input:
 [[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
 
 Output:
+```
 [null, null, null, 1, null, -1, null, -1, 3, 4]
-
+```
 
 Explanation
-
+```
 LRUCache lRUCache = new LRUCache(2);
 
 lRUCache.put(1, 1);
@@ -74,7 +75,7 @@ Returns 3.
 lRUCache.get(4);
 Returns 4.
 
-
+```
 Constraints
 
 1 <= capacity <= 3000
@@ -87,6 +88,7 @@ At most 2 * 10^5 calls will be made to get and put.
 
 
 Requirements
+```
 
 The implementation must ensure that:
 
@@ -95,7 +97,7 @@ The implementation must ensure that:
 - Existing keys can be updated.
 - Recently accessed keys are treated as most recently used.
 - The least recently used key is removed when the cache exceeds its capacity.
-
+```
 
 Key Concepts
 
