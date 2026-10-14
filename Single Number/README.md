@@ -1,32 +1,56 @@
-Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+Single Number
+
+Problem Statement
+
+Given a non-empty array of integers nums, every element appears twice except for one element that appears only once. Find that single element.
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
- 
+Examples
 
-Example 1:
+Example 1
 
-Input: nums = [2,2,1]
+Input:
+```
+nums = [2, 2, 1]
+```
 
-Output: 1
+Output:
+```
+1
+```
+Example 2
 
-Example 2:
+Input:
+```
+nums = [4, 1, 2, 1, 2]
+```
 
-Input: nums = [4,1,2,1,2]
+Output:
+```
+4
+```
+Example 3
 
-Output: 4
+Input:
+```
+nums = [1]
+```
 
-Example 3:
+Output:
+```
+1
+```
+Constraints
 
-Input: nums = [1]
+1 <= nums.length <= 3 * 10^4
+-3 * 10^4 <= nums[i] <= 3 * 10^4
 
-Output: 1
+Every element in the array appears twice except for one element, which appears only once.
 
- 
 
-Constraints:
-
-1 <= nums.length <= 3 * 104
--3 * 104 <= nums[i] <= 3 * 104
-
-Each element in the array appears twice except for one element which appears only once.
+Requirements
+```
+Time Complexity: O(n)
+Space Complexity: O(1)
+```
