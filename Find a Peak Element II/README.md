@@ -10,7 +10,7 @@ A **peak element** in a 2D grid is an element that is **strictly greater** than 
 
 Given a **0-indexed** `m x n` matrix `mat`, where **no two adjacent cells are equal**, return the coordinates `[i, j]` of **any** peak element.
 
-You may assume that the matrix is surrounded by a border of cells having value `-1`.
+You may assume that the matrix is surrounded by a border of cells having value `-1`..
 
 Your algorithm must run in:
 
