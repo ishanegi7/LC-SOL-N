@@ -14,15 +14,17 @@ Example 1
 Input:
 
 text
+```
 nums = [2, 7, 11, 15]
+```
 target = 9
 
 
 Output:
 
-text
+```
 [0, 1]
-
+```
 
 Explanation:
 
@@ -32,16 +34,17 @@ Example 2
 
 Input:
 
-text
+```
 nums = [3, 2, 4]
+```
 target = 6
 
 
 Output:
 
-text
+```
 [1, 2]
-
+```
 
 Explanation:
 
@@ -52,28 +55,31 @@ Example 3
 Input:
 
 text
+```
 nums = [3, 3]
+```
 target = 6
 
 
 Output:
 
 text
+```
 [0, 1]
-
+```
 
 Explanation:
 
 The two elements at indices 0 and 1 add up to the target. Even though their values are equal, they are two different elements.
 
 ⚙️ Constraints
-
+```
 2 <= nums.length <= 10⁴
 -10⁹ <= nums[i] <= 10⁹
 -10⁹ <= target <= 10⁹
 Only one valid answer exists.
 The same element cannot be used twice.
-
+```
 ⏱️ Complexity Analysis
 
 Approach	Time Complexity	Space Complexity
@@ -88,6 +94,7 @@ Note: Space complexity for sorting plus two pointers may vary depending on the s
 Can you design an algorithm that solves this problem in less than O(n²) time complexity?
 
 📚 Topic
+
 Arrays
 Hash Tables
 Searching
