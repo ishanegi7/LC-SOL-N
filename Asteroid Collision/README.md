@@ -37,10 +37,11 @@ Find out the state of the asteroids after all collisions.
 
 **Input:**
 
-```
-asteroids = [5,10,-5]
-Output:
 
+asteroids = [5,10,-5]
+
+Output:
+```
 [5,10]
 ```
 Explanation:
@@ -50,27 +51,30 @@ The 10 and -5 collide resulting in 10.
 The 5 and 10 never collide because they are moving in the same direction.
 
 Example 2
-```
+
 Input:
 
 asteroids = [8,-8]
-Output:
 
+Output:
+```
 []
+```
 Explanation:
 
 The 8 and -8 collide.
 
 Both are the same size, so both explode.
-```
+
 Example 3
-```
+
 Input:
 
 asteroids = [10,2,-5]
 Output:
-
+```
 [10]
+```
 Explanation:
 
 The 2 and -5 collide, resulting in -5.
@@ -83,8 +87,9 @@ Input:
 
 asteroids = [3,5,-6,2,-1,4]
 Output:
-
+```
 [-6,2,4]
+```
 Explanation:
 
 The -6 makes the asteroid 3 and 5 explode, and then continues going left.
@@ -92,7 +97,7 @@ The -6 makes the asteroid 3 and 5 explode, and then continues going left.
 On the other side, the asteroid 2 destroys -1.
 
 Since 2 and 4 are both moving right, they never collide.
-```
+
 Constraints
 
 ```
