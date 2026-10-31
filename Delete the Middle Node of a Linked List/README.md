@@ -62,11 +62,12 @@ The linked list contains 2 nodes. The middle node is at index `1`, with value `1
 - `1 <= Node.val <= 10^5`
 
 ## Key Concepts
-
+```
 - Singly Linked List
 - Two-Pointer Technique
 - Fast and Slow Pointers
 - In-Place Modification
+```
 
 ## Complexity
 
